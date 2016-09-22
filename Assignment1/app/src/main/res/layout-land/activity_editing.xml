@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancel"
+            android:id="@+id/btnCancel_edit" android:layout_alignParentBottom="true" android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp" android:layout_marginBottom="25dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save"
+            android:id="@+id/btnSave_edit"
+            android:layout_marginEnd="32dp" android:layout_alignTop="@+id/btnCancel_edit"
+            android:layout_alignParentEnd="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Name"
+            android:id="@+id/llName" android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnCancel_edit" android:layout_marginTop="30dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/eetName_main"
+            android:layout_alignTop="@+id/llName" android:layout_toEndOf="@+id/btnCancel_edit"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ID:"
+            android:id="@+id/llID" android:layout_below="@+id/eetName_main" android:layout_alignStart="@+id/llName"
+            android:layout_marginTop="22dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/ettID_main" android:layout_alignBottom="@+id/llID"
+            android:layout_toEndOf="@+id/btnCancel_edit"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Android"
+            android:id="@+id/ttvAndroid" android:layout_alignTop="@+id/eetName_main" android:layout_toEndOf="@+id/eetName_main"
+            android:layout_marginStart="60dp"/>
+
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioGroup"
+                android:layout_alignTop="@+id/ettID_main" android:layout_alignStart="@+id/ttvAndroid">
+
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Yes"
+                     android:checked="true" android:id="@+id/ccbYes"/>
+
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/No"
+                     android:checked="true" android:id="@+id/ccbNo"/>
+
+    </RadioGroup>
+</RelativeLayout>

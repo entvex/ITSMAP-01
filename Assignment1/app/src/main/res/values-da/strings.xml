@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Opgave 1</string>
+    <string name="Name">Navn</string>
+    <string name="action_settings">Indstillinger</string>
+    <string name="Save">Gem</string>
+    <string name="Cancel">Annuller</string>
+    <string name="No">Nej</string>
+    <string name="Yes">Ja</string>
+</resources>

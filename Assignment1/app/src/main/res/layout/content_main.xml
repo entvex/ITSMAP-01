@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context="info.davidjensen.entvex.assignment1.MainActivity">
+
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/ievImage"
+        android:src="@drawable/defaultphoto"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Name"
+            android:id="@+id/llName" android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Id"
+            android:id="@+id/llID"
+            android:layout_below="@+id/ttvName_main" android:layout_alignStart="@+id/ttvName_main"
+            android:layout_marginTop="37dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Android"
+            android:id="@+id/llAndroid"
+            android:layout_below="@+id/ttvId_main" android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"/>
+    <CheckBox
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ckbAndroid"
+            android:checked="false"
+            android:layout_marginTop="67dp" android:layout_below="@+id/ttvId_main" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1337"
+            android:id="@+id/ttvId_main" android:layout_below="@id/llID" android:layout_centerHorizontal="true" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ole"
+            android:id="@+id/ttvName_main" android:layout_below="@+id/llName" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

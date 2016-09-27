@@ -2,8 +2,8 @@
 This is some of the android apps made in the course ITSMAP-01. 
 Some of them are made in IntelliJ IDEA and others in android studio
 # Disclaimer:
-These were hacks made for / during the lesson and are not gold standard / best practise, nicely documented or in any way production ready code to be used for anything else but learning in this course :) 
-Not updated for Material Design / newest compatibility 
+These were hacks made for / during the lesson and are not gold standard / best practise, nicely documented or in any way production ready code to be used for anything else but my own learning in this class. 
+The apps are and will not be updated for Material Design / newest compatibility 
 
 # Table of apps
 
